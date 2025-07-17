@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Annie Du</title>
+    <href = style.css></href>
+</head>
+<body> 
+    <nav class="top-bar">
+    <a href="#home">Placeholder</a>
+    <div class="topbar-right">\
+        <a href="#about">About me</a>
+        <a href="#Pr1">Steelhacks</a>
+        <a href="Pr2">Lotus Bite</a>
+        <a href="Pr3">Cosmic</a>
+        <a href="Pr4">Contact</a>
+    </div>
+  </nav>
+
+</body>
+</html>
