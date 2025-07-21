@@ -64,21 +64,14 @@ float: right;
 .frontcover {
   display: flex;
   justify-content: center;
-  animation: fadeIn 3s;
+  animation: fadeIn 4s;
   transition: background-image 0.5s ease-in-out;
   background-size: cover;
-  animation-name: onclick;
-  animation-duration: 4s;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
-
-@keyframes onclick {
-  0% { }
-  100% { }
 }
 
 .frontcover.active {
