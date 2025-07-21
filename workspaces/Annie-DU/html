@@ -5,17 +5,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="all">
   <nav class="top-bar">
-    <a href="#home">Home</a>
+    <a href="#home"><img src="image.png" class="home" width="30px" height="30px"></a>
     <div class="top-bar-right">
-        <a href="#about">About</a>
-        <a href="#pr1">Steelhacks</a>
-        <a href="#pr2">Lotus</a>
-        <a href="#pr3">Cosmic</a>
-        <a href="#pr4">Contact</a>
+        <a href="#about"><img src="Group 1.png" class="s" width="30px" height="30px"></a>
+        <a href="#pr1"><img src="sh.png" class="d" width="30px" height="30px"></a>
+        <a href="#pr2"><img src="lot.png" class="f" width="30px" height="30px"></a>
+        <a href="#pr3"><img src="cosm.png" class="g" width="30px" height="30px"></a>
+        <a href="#pr4"><img src="Group 2.png" class="h" width="30px" height="30px"></a>
     </div>
   </nav>
 
+  <div class="frontcover">
+    <a href="#enter"><img src="folder close.png" width="700px"></a>
+  </div>
 </body>
 </html>

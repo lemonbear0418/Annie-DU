@@ -1,32 +1,95 @@
-.body {
-    background-color: #EDE8D0;
+.all {
+  background-color: #f1d6dd;
 }
 
 .top-bar {
-  background-color: #C28E88;
-  overflow: hidden; /* Clear floats */
-  position: fixed; /* or absolute, depending on desired behavior */
-  top: 0;
-  width: 100%;
-  border-radius: 14px;
+background-color: transparent;
+overflow: hidden; 
+position: sticky;
+top: 0;
+width: 100%;
+border-radius: 14px;
 }
 
 .top-bar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+float: left;
+display: block;
+color: #1B0202;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
 .top-bar a:hover {
-  background-color: #ddd;
-  color: black;
-  border-radius: 14px;
+background-color: #F4CCCC;
+border-radius: 14px;
+
 }
 
-  .top-bar-right {
-  float: right;
+.home:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.s:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.d:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.f:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.g:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.h:hover {
+filter: brightness(0) invert(1);
+border-radius: 20px;
+}
+
+.top-bar-right {
+float: right;
+}
+
+.frontcover {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 3s;
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  animation-name: onclick;
+  animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes onclick {
+  0% { }
+  100% { }
+}
+
+.frontcover.active {
+ transform: translateY(4px);
+}
+
+.frontcover:hover {
+  cursor: pointer;
+  content: url('folder\ open.png');
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  margin: 0 auto;
 }
