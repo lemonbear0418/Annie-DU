@@ -3,9 +3,9 @@
 }
 
 .top-bar {
-background-color: transparent;
-overflow: hidden; 
-position: sticky;
+background-color: transparent; 
+position: fixed;
+overflow: hidden;
 top: 0;
 width: 100%;
 border-radius: 14px;
@@ -24,7 +24,6 @@ font-size: 17px;
 .top-bar a:hover {
 background-color: #F4CCCC;
 border-radius: 14px;
-
 }
 
 .home:hover {
@@ -64,20 +63,22 @@ float: right;
 .frontcover {
   display: flex;
   justify-content: center;
-  animation: fadeIn 4s;
+  position: relative;
+  animation: fadeIn 6s;
   transition: background-image 0.5s ease-in-out;
+  animation-timing-function: linear;
   background-size: cover;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
-  100% { opacity: 1; }
+  40% {opacity: 1; }
+  40% {transform:scale(1); top: 0px; left: 0px; }
+  100% {transform:scale(1.3); top: 160px; left: -100px; }
 }
 
-.frontcover.active {
- transform: translateY(4px);
-}
-
+/*
 .frontcover:hover {
   cursor: pointer;
   content: url('folder\ open.png');
@@ -85,4 +86,6 @@ float: right;
   justify-content: center;
   width: 750px;
   margin: 0 auto;
-}
+} 
+  
+4 frames fading, 2 waiting, then 4 frams getting bigger*/
