@@ -9,6 +9,7 @@ overflow: hidden;
 top: 0;
 width: 100%;
 border-radius: 14px;
+z-index: 10;
 }
 
 .top-bar a {
@@ -64,18 +65,19 @@ float: right;
   display: flex;
   justify-content: center;
   position: relative;
-  animation: fadeIn 6s;
+  animation: fadeIn 2s;
   transition: background-image 0.5s ease-in-out;
   animation-timing-function: linear;
   background-size: cover;
   animation-fill-mode: forwards;
+  z-index: 1;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
-  40% {opacity: 1; }
-  40% {transform:scale(1); top: 0px; left: 0px; }
-  100% {transform:scale(1.3); top: 160px; left: -100px; }
+  26% {opacity: 0.3; transform:scale(1); top: 0px; left: 0px; }
+  70% {opacity: 1; }
+  100% {transform:scale(1.3); top: 100px; left: -100px; }
 }
 
 /*
@@ -89,3 +91,28 @@ float: right;
 } 
   
 4 frames fading, 2 waiting, then 4 frams getting bigger*/
+
+.pen {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 14px;
+  overflow: hidden;
+  top: 230px;
+  left: 300px;
+  z-index: 2;
+  animation: fadeBitch 3s;
+  transition: ease-in-out;
+  animation-timing-function: linear;
+  background-size: cover;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBitch {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  60% {opacity: 0.2;}
+  100% { opacity: 1; }
+}
+
+.

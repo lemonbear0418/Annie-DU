@@ -17,8 +17,18 @@
     </div>
   </nav>
 
+ <div class="pen"> 
+    <img src="weaving.jpg" width = "500px">
+    <div class="writing">
+      <h2>About me!</h2>
+      <p>blah b,.aguisdhfguhjisddf</p>
+    </div>
+  </div>
+
   <div class="frontcover">
     <a href="#start"><img src="folder close.png" width="700px"></a>
   </div>
+
+ 
 </body>
 </html>
