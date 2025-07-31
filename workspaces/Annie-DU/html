@@ -18,11 +18,11 @@
   </nav>
 
  <div class="pen"> 
-    <img src="weaving.jpg" width = "500px">
-    <div class="writing">
-      <h2>About me!</h2>
-      <p>blah b,.aguisdhfguhjisddf</p>
+    <div>
+      <h2 class="writing">About me!</h2>
+      <p class="writing2">  Annie Du is currently an artist located in Pittsburgh and studying at the University of Pittsburgh, pursuing a BA in Studio arts and Economics. She usually indulges in using digital programs to create art, or using acrylic paint to paint more detail oriented work. She wants to incorporate more of other media in her artwork, such as yarn or maybe even jewels. Currently, her art goal is to create art that is outwardly visually appealing and detailed, but wants to be innovative in her style and use of color. Most of her work involves some pattern research</p>
     </div>
+    <img src="weaving.jpg" width = "500px">
   </div>
 
   <div class="frontcover">
