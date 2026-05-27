@@ -7,13 +7,14 @@
 
 <body class="all">
   <nav class="top-bar">
-    <a href="#home"><img src="image.png" class="home" width="30px" height="30px"></a>
-    <div class="top-bar-right">
-        <a href="#about"><img src="Group 1.png" class="s" width="30px" height="30px"></a>
-        <a href="#pr1"><img src="sh.png" class="d" width="30px" height="30px"></a>
-        <a href="#pr2"><img src="lot.png" class="f" width="30px" height="30px"></a>
-        <a href="#pr3"><img src="cosm.png" class="g" width="30px" height="30px"></a>
-        <a href="#pr4"><img src="Group 2.png" class="h" width="30px" height="30px"></a>
+    <a href="#home"><img src="images/image.png" class="home" width="30px" height="30px"></a>
+        <h1 class="name">Annie Zhaoyuan Du</h1>
+     <div class="top-bar-right">
+        <a href="#about"><img src="images/Group 1.png" class="s" width="30px" height="30px"></a>
+        <a href="#pr1"><img src="images/sh.png" class="d" width="30px" height="30px"></a>
+        <a href="#pr2"><img src="images/lot.png" class="f" width="30px" height="30px"></a>
+        <a href="#pr3"><img src="images/cosm.png" class="g" width="30px" height="30px"></a>
+        <a href="#pr4"><img src="images/Group 2.png" class="h" width="30px" height="30px"></a>
     </div>
   </nav>
 
@@ -22,11 +23,11 @@
       <h2 class="writing">About me!</h2>
       <p class="writing2">  Annie Du is currently an artist located in Pittsburgh and studying at the University of Pittsburgh, pursuing a BA in Studio arts and Economics. She usually indulges in using digital programs to create art, or using acrylic paint to paint more detail oriented work. She wants to incorporate more of other media in her artwork, such as yarn or maybe even jewels. Currently, her art goal is to create art that is outwardly visually appealing and detailed, but wants to be innovative in her style and use of color. Most of her work involves some pattern research</p>
     </div>
-    <img src="weaving.jpg" width = "500px">
+    <img src="images/weaving.jpg" width = "500px">
   </div>
 
   <div class="frontcover">
-    <a href="#start"><img src="folder close.png" width="700px"></a>
+    <a href="#start"><img src="images/splash.png" width="1000px"></a>
   </div>
 
  
