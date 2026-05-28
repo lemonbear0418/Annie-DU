@@ -13,42 +13,57 @@
 background-color: transparent; 
 position: fixed;
 overflow: hidden;
-top: 0;
+top: 20px;
 width: 100%;
-border-radius: 14px;
+border-radius: 16px;
 z-index: 10;
 }
 
 
-.top-bar a {
-float: left;
-display: block;
-color: #1B0202;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+.top-bar h1 {
+  float: left;
+  display: block;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 44px;
+  font-family: monospace;
+  font-weight: lighter;
 }
 
-.top-bar a:hover {
+.house {
+  filter: brightness(0) invert(1);
+}
+
+.top-bar h1::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #e4d4c2;
+  transition: width 0.7s ease-in-out;
+}
+
+.top-bar h1:hover::after {
+  width: 100%;
+}
+
+/*
+.top-bar h1:hover {
 background-color: #F4CCCC;
-border-radius: 14px;
+border-radius: 12px;
 }
+*/
 
-.home:hover {
+.name:hover {
 filter: brightness(0) invert(1);
 border-radius: 20px;
 }
 
-.s:hover {
-filter: brightness(0) invert(1);
-border-radius: 20px;
-}
-
-.d:hover {
-filter: brightness(0) invert(1);
-border-radius: 20px;
-}
 
 .f:hover {
 filter: brightness(0) invert(1);
@@ -67,6 +82,7 @@ border-radius: 20px;
 
 .top-bar-right {
 float: right;
+padding: 20px 30px;
 }
 
 .frontcover {
@@ -78,6 +94,12 @@ float: right;
   background-size: cover;
   animation-fill-mode: forwards;
   z-index: 1;
+}
+
+img[src="images/image.png"] {
+  position: relative;
+  left: 5px;
+  top: 3px;
 }
 
 @keyframes fadeIn {
@@ -106,9 +128,9 @@ float: right;
   border-radius: 14px;
   overflow: hidden;
   top: 230px;
-  left: 300px;
+  left: 50px;
   z-index: 2;
-  animation: fadeBitch 2s;
+  animation: fadeBitch 1.5s;
   transition: ease-in-out;
   animation-timing-function: linear;
   background-size: cover;
@@ -131,4 +153,12 @@ float: right;
   justify-content: center;
   max-width: 300px;
   padding-right: 30px;
+  position:absolute;
+  z-index: 2;
+}
+
+.openf {
+  position:relative;
+  filter:brightness(20);
+  padding: right 50px;
 }
