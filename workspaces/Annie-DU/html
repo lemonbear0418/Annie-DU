@@ -12,25 +12,24 @@
   <nav class="top-bar">
       <h1 class="name">Annie Zhaoyuan Du  <img src="images/image.png" class="house" top= "6px" width="30px" height="30px"></h1>
      <div class="top-bar-right">
-        <a href="#pr2"><img src="images/lot.png" class="f" width="30px" height="30px"></a>
-        <a href="#pr3"><img src="images/cosm.png" class="g" width="30px" height="30px"></a>
-        <a href="#pr4"><img src="images/Group 2.png" class="h" width="30px" height="30px"></a>
+        <a href="#pr2" class="nav-link f">DESIGN</a>
+        <a href="#pr3" class="nav-link g">ARTWORK</a>
+        <a href="#photos" class="nav-link">PHOTOGRAPHY</a>
+        <a href="#pr4" class="nav-link h"><img src="images/Group 2.png" alt="Icon"></a>
     </div>
   </nav>
 
  <div class="pen"> 
     <div>
       <h2 class="writing">About me!</h2>
-      <p class="writing2">  Annie Du is currently an artist located in Pittsburgh and studying at the University of Pittsburgh, pursuing a BA in Studio arts and Economics. She usually indulges in using digital programs to create art, or using acrylic paint to paint more detail oriented work. She wants to incorporate more of other media in her artwork, such as yarn or maybe even jewels. Currently, her art goal is to create art that is outwardly visually appealing and detailed, but wants to be innovative in her style and use of color. Most of her work involves some pattern research</p>
+      <p class="writing2">  Located in Pittsburgh, Annie Du is a passionate artist who recently finished her Bachelors of Science and Art at the University of Pittsburgh for Economics and Studio Arts. Currently, her art goal is to create art that is outwardly visually appealing and detailed, but wants to be innovative in her style and use of color.</p>
       <a href="#pr1"><img src="images/folder open.png" class="openf" width="600px"></a>
     </div>
-    <img src="images/weaving.jpg" width = "500px">
+    <img src="images/weaving.jpg" class="weaving-img" width="500px">
   </div>
 
   <div class="frontcover">
-    <a href="#start"><img src="images/splash.png" width="1000px"></a>
+    <a href="#start"><img src="images/splash.png" alt="Splash"></a>
   </div>
-
- 
 </body>
 </html>
