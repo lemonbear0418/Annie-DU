@@ -9,6 +9,7 @@
 </head>
 
 <body class="all">
+  <div class="top-rect" aria-hidden="true"></div>
   <nav class="top-bar">
       <h1 class="name">Annie Zhaoyuan Du  <img src="images/image.png" class="house" top= "6px" width="30px" height="30px"></h1>
      <div class="top-bar-right">

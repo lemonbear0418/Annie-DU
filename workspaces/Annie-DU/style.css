@@ -120,6 +120,26 @@ border-radius: 20px;
   }
 }
 
+/* White top rectangle: 8px from top, centered, animates 0 -> 800px */
+.top-rect {
+  position: fixed;
+  top: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  background-color: #6b53c2;
+  border-radius: 999px;
+  z-index: 50;
+  animation: rectExpand 1.3s ease forwards;
+  opacity: 0.7;
+}
+
+@keyframes rectExpand {
+  from { width: 0; }
+  to { width: 800px; }
+}
+
 .scroll-rectangle {
   position: fixed;
   top: 120px;
