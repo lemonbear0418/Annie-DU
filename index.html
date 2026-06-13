@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,9 +71,11 @@
       <details id="artwork1" class="dropdown">
         <summary class="dropdown-summary">Artwork</summary>
         <div class="dropdown-panel">
-          <button type="button" class="dropdown-option">Option A</button>
-          <button type="button" class="dropdown-option">Option B</button>
-          <button type="button" class="dropdown-option">Option C</button>
+          {% assign artwork_files = site.static_files | where_exp: "file", "file.relative_path contains '/artwork/'" %}
+          {% assign artwork_files = artwork_files | where_exp: "file", "file.extname == '.png' or file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.gif'" | sort: 'name' %}
+          {% for file in artwork_files %}
+          <button type="button" class="image-button"><img src="{{ file.relative_path }}" alt="{{ file.name | split: '.' | first | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="dropdown-image"></button>
+          {% endfor %}
         </div>
       </details>
     </div>
@@ -81,9 +86,11 @@
       <details id="photography1" class="dropdown">
         <summary class="dropdown-summary">Photography</summary>
         <div class="dropdown-panel">
-          <button type="button" class="dropdown-option">Option A</button>
-          <button type="button" class="dropdown-option">Option B</button>
-          <button type="button" class="dropdown-option">Option C</button>
+          {% assign photography_files = site.static_files | where_exp: "file", "file.relative_path contains '/photography/'" %}
+          {% assign photography_files = photography_files | where_exp: "file", "file.extname == '.png' or file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.gif'" | sort: 'name' %}
+          {% for file in photography_files %}
+          <button type="button" class="image-button"><img src="{{ file.relative_path }}" alt="{{ file.name | split: '.' | first | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="dropdown-image"></button>
+          {% endfor %}
         </div>
       </details>
     </div>
