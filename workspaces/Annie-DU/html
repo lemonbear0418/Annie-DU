@@ -8,11 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
+<h1 class="name">Annie Zhaoyuan Du  <img src="images/image.png" class="house" top= "6px" width="30px" height="30px"></h1>
+
 <body class="all">
-  <div class="top-rect" aria-hidden="true"></div>
-  <nav class="top-bar">
-      <h1 class="name">Annie Zhaoyuan Du  <img src="images/image.png" class="house" top= "6px" width="30px" height="30px"></h1>
-     <div class="top-bar-right">
+    <div class="top-rect" aria-hidden="true"></div>
+    
+    <nav class="top-bar">
+      <div class="top-bar-right">
         <a href="#pr2" class="nav-link f">DESIGN</a>
         <a href="#pr3" class="nav-link g">ARTWORK</a>
         <a href="#photos" class="nav-link">PHOTOGRAPHY</a>
@@ -32,5 +34,60 @@
   <div class="frontcover">
     <a href="#start"><img src="images/splash.png" alt="Splash"></a>
   </div>
+  <div id="design1" class="design1">
+    <div class="dropdown-wrapper">
+      <details class="dropdown">
+        <summary class="dropdown-summary">Steelhacks 2025</summary>
+        <div class="dropdown-panel">
+          <button type="button" class="dropdown-option">Option A</button>
+          <button type="button" class="dropdown-option">Option B</button>
+          <button type="button" class="dropdown-option">Option C</button>
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="dropdown-summary">Mock restaurant</summary>
+        <div class="dropdown-panel">
+          <button type="button" class="dropdown-option">Option D</button>
+          <button type="button" class="dropdown-option">Option E</button>
+          <button type="button" class="dropdown-option">Option F</button>
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="dropdown-summary">Mock bakery</summary>
+        <div class="dropdown-panel">
+          <button type="button" class="dropdown-option">Option G</button>
+          <button type="button" class="dropdown-option">Option H</button>
+          <button type="button" class="dropdown-option">Option I</button>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="design1">
+    <div class="dropdown-wrapper">
+      <details class="dropdown">
+        <summary class="dropdown-summary">Artwork</summary>
+        <div class="dropdown-panel">
+          <button type="button" class="dropdown-option">Option A</button>
+          <button type="button" class="dropdown-option">Option B</button>
+          <button type="button" class="dropdown-option">Option C</button>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="design1">
+    <div class="dropdown-wrapper">
+      <details class="dropdown">
+        <summary class="dropdown-summary">Photography</summary>
+        <div class="dropdown-panel">
+          <button type="button" class="dropdown-option">Option A</button>
+          <button type="button" class="dropdown-option">Option B</button>
+          <button type="button" class="dropdown-option">Option C</button>
+        </div>
+      </details>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
