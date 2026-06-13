@@ -33,4 +33,38 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  // Handle email copy on click for .h nav-link
+  const emailLink = document.querySelector('.nav-link.h');
+  if (emailLink) {
+    emailLink.addEventListener('click', event => {
+      event.preventDefault();
+      const email = 'and073939@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        alert('Email copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy email:', err);
+      });
+    });
+  }
+
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    // Skip .h link as it has its own handler
+    if (link.classList.contains('h')) return;
+    
+    link.addEventListener('click', event => {
+      const targetId = link.getAttribute('href')?.slice(1);
+      if (!targetId) return;
+      const target = document.getElementById(targetId);
+      if (target && target.tagName.toLowerCase() === 'details') {
+        dropdowns.forEach(other => {
+          if (other !== target) {
+            other.removeAttribute('open');
+          }
+        });
+        target.setAttribute('open', '');
+      }
+    });
+  });
 });

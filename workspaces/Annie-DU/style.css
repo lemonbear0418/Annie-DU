@@ -75,7 +75,6 @@ border-radius: 20px;
 
 .f:hover,
 .g:hover,
-.h:hover,
 .nav-link:hover {
   filter: brightness(0) invert(1);
   border-radius: 20px;
@@ -83,6 +82,30 @@ border-radius: 20px;
 
 .h {
   filter: brightness(0) invert(1);
+  position: relative;
+}
+
+.h:hover {
+  filter: brightness(0) invert(1);
+  border-radius: 20px;
+}
+
+.h:hover::before {
+  content: 'and073939@gmail.com';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: 8px;
+  z-index: 1000;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  opacity: 0.8;
 }
 
 .nav-link img {

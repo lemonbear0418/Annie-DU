@@ -15,9 +15,9 @@
     
     <nav class="top-bar">
       <div class="top-bar-right">
-        <a href="#pr2" class="nav-link f">DESIGN</a>
-        <a href="#pr3" class="nav-link g">ARTWORK</a>
-        <a href="#photos" class="nav-link">PHOTOGRAPHY</a>
+        <a href="#design1" class="nav-link f">DESIGN</a>
+        <a href="#artwork1" class="nav-link g">ARTWORK</a>
+        <a href="#photography1" class="nav-link">PHOTOGRAPHY</a>
         <a href="#pr4" class="nav-link h"><img src="images/Group 2.png" alt="Icon"></a>
     </div>
   </nav>
@@ -36,7 +36,7 @@
   </div>
   <div id="design1" class="design1">
     <div class="dropdown-wrapper">
-      <details class="dropdown">
+      <details id="design1" class="dropdown">
         <summary class="dropdown-summary">Steelhacks 2025</summary>
         <div class="dropdown-panel">
           <button type="button" class="dropdown-option">Option A</button>
@@ -65,7 +65,7 @@
 
   <div class="design1">
     <div class="dropdown-wrapper">
-      <details class="dropdown">
+      <details id="artwork1" class="dropdown">
         <summary class="dropdown-summary">Artwork</summary>
         <div class="dropdown-panel">
           <button type="button" class="dropdown-option">Option A</button>
@@ -78,7 +78,7 @@
 
   <div class="design1">
     <div class="dropdown-wrapper">
-      <details class="dropdown">
+      <details id="photography1" class="dropdown">
         <summary class="dropdown-summary">Photography</summary>
         <div class="dropdown-panel">
           <button type="button" class="dropdown-option">Option A</button>
