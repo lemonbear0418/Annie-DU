@@ -328,6 +328,17 @@ img[src="images/image.png"] {
   .dropdown-wrapper { flex-direction: column; gap: 8px; }
   .dropdown { width: 100%; }
   .scroll-rectangle { width: calc(100% - 32px); left: 50%; transform: translateX(-50%); }
+
+  /* Splash/frontcover: make it part of the normal flow and proportionate */
+  .frontcover { position: relative; top: auto; left: auto; height: auto; width: 100%; pointer-events: auto; margin: 8px 0 12px; }
+  .frontcover img { width: 100%; height: auto; max-height: 40vh; object-fit: cover; display: block; border-radius: 12px; }
+
+  /* Make dropdown thumbnails smaller on phones */
+  .image-button { max-width: 140px; }
+  .dropdown-image { max-width: 140px; }
+
+  /* Scale other large images */
+  .openf { max-width: 320px; }
 }
 
 @media (max-width: 400px) {
@@ -336,6 +347,10 @@ img[src="images/image.png"] {
   .top-bar-right { gap: 6px; }
   .writing { font-size: 18px; }
   .writing2 { font-size: 14px; }
+  .frontcover img { max-height: 32vh; border-radius: 10px; }
+  .image-button { max-width: 120px; }
+  .dropdown-image { max-width: 120px; }
+  .openf { max-width: 220px; }
 }
 
 @keyframes floatIn2 {
