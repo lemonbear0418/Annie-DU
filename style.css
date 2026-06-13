@@ -186,12 +186,12 @@ border-radius: 20px;
 }
 
 .frontcover {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -314,44 +314,27 @@ img[src="images/image.png"] {
 
 /* Responsive: make layout stack and scale for small screens */
 @media (max-width: 768px) {
-  .name { font-size: 28px; top: 18px; }
-  .top-bar { top: 8px; min-height: 60px; }
-  .top-bar-right { gap: 10px; top: 6px; }
   .top-rect { top: 28px; }
-  .pen { flex-direction: column; gap: 16px; margin: 120px 16px 0; padding: 0 12px; }
-  .pen > div { max-width: 100%; }
-  .writing { position: static; top: auto; left: auto; font-size: 20px; margin: 6px 0; }
-  .writing2 { position: static; top: auto; left: auto; right: auto; max-width: none; font-size: 15px; margin: 4px 0 12px; }
-  .openf { width: 100%; height: auto; opacity: 1; }
-  .weaving-img { width: 100%; max-width: none; }
-  .design1 { width: calc(100% - 32px); margin: 16px auto; padding: 12px; }
-  .dropdown-wrapper { flex-direction: column; gap: 8px; }
-  .dropdown { width: 100%; }
-  .scroll-rectangle { width: calc(100% - 32px); left: 50%; transform: translateX(-50%); }
-
-  /* Splash/frontcover: make it part of the normal flow and proportionate */
-  .frontcover { position: relative; top: auto; left: auto; height: auto; width: 100%; pointer-events: auto; margin: 8px 0 12px; }
-  .frontcover img { width: 100%; height: auto; max-height: 40vh; object-fit: cover; display: block; border-radius: 12px; }
-
-  /* Make dropdown thumbnails smaller on phones */
-  .image-button { max-width: 140px; }
-  .dropdown-image { max-width: 140px; }
-
-  /* Scale other large images */
-  .openf { max-width: 320px; }
+  .frontcover { display: block; position: relative; width: 100%; height: auto; margin: 0 0 16px; }
+  .frontcover img { width: 100%; height: auto; object-fit: cover; display: block; }
+  .name { font-size: 58px; }
+  .nav-link { font-size: 12px; }
+  .writing { font-size: 22px; }
+  .writing2 { font-size: 14px; }
+  .dropdown-summary { font-size: 0.83rem; }
+  .dropdown-option { font-size: 0.8rem; }
+  .openf, .weaving-img { max-width: 47vw; width: 47vw; }
 }
 
 @media (max-width: 400px) {
-  .name { font-size: 20px; }
-  .nav-link { font-size: 12px; padding: 6px 8px; }
-  .top-bar-right { gap: 6px; }
-  .writing { font-size: 18px; }
-  .writing2 { font-size: 14px; }
-  .frontcover img { max-height: 32vh; border-radius: 10px; }
-  .image-button { max-width: 120px; }
-  .dropdown-image { max-width: 120px; }
-  .openf { max-width: 220px; }
-}
+  .top-rect { top: 28px; }
+  .name { font-size: 56px; }
+  .nav-link { font-size: 12px; }
+  .writing { font-size: 20px; }
+  .writing2 { font-size: 12px; }
+  .dropdown-summary { font-size: 0.78rem; }
+  .dropdown-option { font-size: 0.75rem; }
+  .openf,
 
 @keyframes floatIn2 {
   from {
@@ -459,7 +442,7 @@ img[src="images/image.png"] {
 }
 
 .dropdown[open] .dropdown-panel {
-  max-height: 2000px;
+  max-height: 1600px;
   opacity: 1;
 }
 
