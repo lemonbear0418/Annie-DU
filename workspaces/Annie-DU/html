@@ -18,7 +18,7 @@
         <a href="#design1" class="nav-link f">DESIGN</a>
         <a href="#artwork1" class="nav-link g">ARTWORK</a>
         <a href="#photography1" class="nav-link">PHOTOGRAPHY</a>
-        <a href="#pr4" class="nav-link h"><img src="images/Group 2.png" alt="Icon"></a>
+        <a href="#pr4" class="nav-link h"><img src="images/Group2.png" alt="Icon"></a>
     </div>
   </nav>
 
@@ -26,7 +26,7 @@
     <div>
       <h2 class="writing">About me!</h2>
       <p class="writing2">  Located in Pittsburgh, Annie Du is a passionate artist who recently finished her Bachelors of Science and Art at the University of Pittsburgh for Economics and Studio Arts. Currently, her art goal is to create art that is outwardly visually appealing and detailed, but wants to be innovative in her style and use of color.</p>
-      <a href="#pr1"><img src="images/folder open.png" class="openf" width="600px"></a>
+      <a href="#pr1"><img src="images/folderopen.png" class="openf" width="600px"></a>
     </div>
     <img src="images/weaving.jpg" class="weaving-img" width="500px">
   </div>
