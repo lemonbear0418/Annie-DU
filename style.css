@@ -420,10 +420,9 @@ img[src="images/image.png"] {
 }
 
 .dropdown-panel {
-  position: absolute;
-  left: -18px;
-  right: -18px;
-  width: auto;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -434,10 +433,8 @@ img[src="images/image.png"] {
   box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
   max-height: 0;
   opacity: 0;
-  transform: translateY(-6px);
   overflow: hidden;
-  transition: max-height 0.36s ease, opacity 0.28s ease, transform 0.32s ease;
-  pointer-events: none;
+  transition: max-height 0.36s ease, opacity 0.28s ease;
   margin-top: 10px;
   z-index: 40;
 }
@@ -447,10 +444,8 @@ img[src="images/image.png"] {
 }
 
 .dropdown[open] .dropdown-panel {
-  max-height: 1600px;
+  max-height: 2000px;
   opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }
 
 /* Image thumbnails in dropdowns */
