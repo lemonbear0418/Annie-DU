@@ -396,10 +396,10 @@ img[src="images/image.png"] {
 }
 
 .dropdown-panel {
-  position: absolute;
-  left: -18px;
-  right: -18px;
-  width: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -415,7 +415,7 @@ img[src="images/image.png"] {
   transition: max-height 0.36s ease, opacity 0.28s ease, transform 0.32s ease;
   pointer-events: none;
   margin-top: 10px;
-  z-index: 40;
+  z-index: 1;
 }
 
 .design1 {
