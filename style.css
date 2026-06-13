@@ -1,9 +1,11 @@
 .all {
   background-color: #e4d4c2;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  width: 100%;
+  max-width: auto;
+  height: auto;
   display: block;
 }
 
@@ -186,12 +188,12 @@ border-radius: 20px;
 }
 
 .frontcover {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -312,30 +314,6 @@ img[src="images/image.png"] {
   animation: floatIn 1s ease-out 0.1s forwards;
 }
 
-/* Responsive: make layout stack and scale for small screens */
-@media (max-width: 768px) {
-  .top-rect { top: 28px; }
-  .frontcover { display: block; position: relative; width: 100%; height: auto; margin: 0 0 16px; }
-  .frontcover img { width: 100%; height: auto; object-fit: cover; display: block; }
-  .name { font-size: 58px; }
-  .nav-link { font-size: 12px; }
-  .writing { font-size: 22px; }
-  .writing2 { font-size: 14px; }
-  .dropdown-summary { font-size: 0.83rem; }
-  .dropdown-option { font-size: 0.8rem; }
-  .openf, .weaving-img { max-width: 47vw; width: 47vw; }
-}
-
-@media (max-width: 400px) {
-  .top-rect { top: 28px; }
-  .name { font-size: 56px; }
-  .nav-link { font-size: 12px; }
-  .writing { font-size: 20px; }
-  .writing2 { font-size: 12px; }
-  .dropdown-summary { font-size: 0.78rem; }
-  .dropdown-option { font-size: 0.75rem; }
-  .openf,
-
 @keyframes floatIn2 {
   from {
     opacity: 0;
@@ -418,9 +396,10 @@ img[src="images/image.png"] {
 }
 
 .dropdown-panel {
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
+  position: absolute;
+  left: -18px;
+  right: -18px;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -431,8 +410,10 @@ img[src="images/image.png"] {
   box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
   max-height: 0;
   opacity: 0;
+  transform: translateY(-6px);
   overflow: hidden;
-  transition: max-height 0.36s ease, opacity 0.28s ease;
+  transition: max-height 0.36s ease, opacity 0.28s ease, transform 0.32s ease;
+  pointer-events: none;
   margin-top: 10px;
   z-index: 40;
 }
@@ -444,6 +425,8 @@ img[src="images/image.png"] {
 .dropdown[open] .dropdown-panel {
   max-height: 1600px;
   opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Image thumbnails in dropdowns */
