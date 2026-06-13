@@ -39,25 +39,25 @@
       <details id="design1" class="dropdown">
         <summary class="dropdown-summary">Steelhacks 2025</summary>
         <div class="dropdown-panel">
-          <button type="button" class="dropdown-option">Option A</button>
-          <button type="button" class="dropdown-option">Option B</button>
-          <button type="button" class="dropdown-option">Option C</button>
+          <button type="button" class="image-button"><img src="design/1.png" alt="Steelhacks 1" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/2.png" alt="Steelhacks 2" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/3.png" alt="Steelhacks 3" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/4.png" alt="Steelhacks 4" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/5.png" alt="Steelhacks 5" class="dropdown-image"></button>
         </div>
       </details>
       <details class="dropdown">
         <summary class="dropdown-summary">Mock restaurant</summary>
         <div class="dropdown-panel">
-          <button type="button" class="dropdown-option">Option D</button>
-          <button type="button" class="dropdown-option">Option E</button>
-          <button type="button" class="dropdown-option">Option F</button>
+          <button type="button" class="image-button"><img src="design/6.png" alt="Mock restaurant 6" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/7.png" alt="Mock restaurant 7" class="dropdown-image"></button>
         </div>
       </details>
       <details class="dropdown">
         <summary class="dropdown-summary">Mock bakery</summary>
         <div class="dropdown-panel">
-          <button type="button" class="dropdown-option">Option G</button>
-          <button type="button" class="dropdown-option">Option H</button>
-          <button type="button" class="dropdown-option">Option I</button>
+          <button type="button" class="image-button"><img src="design/8.png" alt="Mock bakery 8" class="dropdown-image"></button>
+          <button type="button" class="image-button"><img src="design/9.png" alt="Mock bakery 9" class="dropdown-image"></button>
         </div>
       </details>
     </div>
@@ -86,6 +86,16 @@
           <button type="button" class="dropdown-option">Option C</button>
         </div>
       </details>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">←</button>
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">→</button>
+      <div class="lightbox-scroll">
+        <img src="" alt="" class="lightbox-img">
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
