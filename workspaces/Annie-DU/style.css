@@ -395,7 +395,7 @@ img[src="images/image.png"] {
   display: none;
 }
 
-..dropdown-panel {
+.dropdown-panel {
   position: absolute;
   left: -18px;
   right: -18px;
