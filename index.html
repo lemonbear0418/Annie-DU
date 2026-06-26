@@ -37,60 +37,38 @@ layout: none
   <div class="frontcover">
     <a href="#start"><img src="images/splash.png" alt="Splash"></a>
   </div>
-  <div id="design1" class="design1">
-    <div class="dropdown-wrapper">
-      <details id="design1" class="dropdown">
-        <summary class="dropdown-summary">Steelhacks 2025</summary>
-        <div class="dropdown-panel">
-          <button type="button" class="image-button"><img src="design/1.png" alt="Steelhacks 1" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/2.png" alt="Steelhacks 2" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/3.png" alt="Steelhacks 3" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/4.png" alt="Steelhacks 4" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/5.png" alt="Steelhacks 5" class="dropdown-image"></button>
-        </div>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown-summary">Mock restaurant</summary>
-        <div class="dropdown-panel">
-          <button type="button" class="image-button"><img src="design/6.png" alt="Mock restaurant 6" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/7.png" alt="Mock restaurant 7" class="dropdown-image"></button>
-        </div>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown-summary">Mock bakery</summary>
-        <div class="dropdown-panel">
-          <button type="button" class="image-button"><img src="design/8.png" alt="Mock bakery 8" class="dropdown-image"></button>
-          <button type="button" class="image-button"><img src="design/9.png" alt="Mock bakery 9" class="dropdown-image"></button>
-        </div>
-      </details>
+  <section id="design1" class="gallery-section">
+    <h2 class="gallery-heading">Design</h2>
+    <div class="gallery-grid">
+      <button type="button" class="image-button"><img src="design/1.png" alt="Steelhacks 1" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/2.png" alt="Steelhacks 2" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/3.png" alt="Steelhacks 3" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/4.png" alt="Steelhacks 4" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/5.png" alt="Steelhacks 5" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/6.png" alt="Mock restaurant 6" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/7.png" alt="Mock restaurant 7" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/8.png" alt="Mock bakery 8" class="gallery-image"></button>
+      <button type="button" class="image-button"><img src="design/9.png" alt="Mock bakery 9" class="gallery-image"></button>
     </div>
-  </div>
+  </section>
 
-  <div class="design1">
-    <div class="dropdown-wrapper">
-      <details id="artwork1" class="dropdown">
-        <summary class="dropdown-summary">Artwork</summary>
-        <div class="dropdown-panel">
-          {% for file in site.data.artwork %}
-          <button type="button" class="image-button"><img src="{{ file.path | relative_url }}" alt="{{ file.name | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="dropdown-image"></button>
-          {% endfor %}
-        </div>
-      </details>
+  <section id="artwork1" class="gallery-section">
+    <h2 class="gallery-heading">Artwork</h2>
+    <div class="gallery-grid">
+      {% for file in site.data.artwork %}
+      <button type="button" class="image-button"><img src="{{ file.path | relative_url }}" alt="{{ file.name | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="gallery-image"></button>
+      {% endfor %}
     </div>
-  </div>
+  </section>
 
-  <div class="design1">
-    <div class="dropdown-wrapper">
-      <details id="photography1" class="dropdown">
-        <summary class="dropdown-summary">Photography</summary>
-        <div class="dropdown-panel">
-          {% for file in site.data.photography %}
-          <button type="button" class="image-button"><img src="{{ file.path | relative_url }}" alt="{{ file.name | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="dropdown-image"></button>
-          {% endfor %}
-        </div>
-      </details>
+  <section id="photography1" class="gallery-section">
+    <h2 class="gallery-heading">Photography</h2>
+    <div class="gallery-grid">
+      {% for file in site.data.photography %}
+      <button type="button" class="image-button"><img src="{{ file.path | relative_url }}" alt="{{ file.name | replace: '_', ' ' | replace: '-', ' ' | capitalize }}" class="gallery-image"></button>
+      {% endfor %}
     </div>
-  </div>
+  </section>
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <div class="lightbox-inner" role="dialog" aria-modal="true">
       <button class="lightbox-close" aria-label="Close">×</button>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const boxes = document.querySelectorAll('.design1');
+  const boxes = document.querySelectorAll('.gallery-section');
   if (!boxes.length) return;
 
   const io = new IntersectionObserver((entries, observer) => {
@@ -12,27 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.15 });
 
   boxes.forEach(box => io.observe(box));
-
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach(dropdown => {
-    const summary = dropdown.querySelector('summary');
-    const options = dropdown.querySelectorAll('.dropdown-option');
-
-    summary.addEventListener('click', () => {
-      dropdowns.forEach(other => {
-        if (other !== dropdown) {
-          other.removeAttribute('open');
-        }
-      });
-    });
-
-    options.forEach(option => {
-      option.addEventListener('click', () => {
-        dropdown.removeAttribute('open');
-      });
-    });
-  });
 
   // Handle email copy on click for .h nav-link
   const emailLink = document.querySelector('.nav-link.h');
@@ -50,20 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
-    // Skip .h link as it has its own handler
     if (link.classList.contains('h')) return;
-    
     link.addEventListener('click', event => {
       const targetId = link.getAttribute('href')?.slice(1);
       if (!targetId) return;
       const target = document.getElementById(targetId);
-      if (target && target.tagName.toLowerCase() === 'details') {
-        dropdowns.forEach(other => {
-          if (other !== target) {
-            other.removeAttribute('open');
-          }
-        });
-        target.setAttribute('open', '');
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
@@ -116,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.image-button').forEach(btn => {
     btn.addEventListener('click', () => {
-      const parentDropdown = btn.closest('.dropdown');
-      if (!parentDropdown) return;
-      const gallery = Array.from(parentDropdown.querySelectorAll('.image-button img'));
+      const parentSection = btn.closest('.gallery-section');
+      if (!parentSection) return;
+      const gallery = Array.from(parentSection.querySelectorAll('.image-button img'));
       const img = btn.querySelector('img');
       const index = gallery.indexOf(img);
       openLightbox(gallery, index);
